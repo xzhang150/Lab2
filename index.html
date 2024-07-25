@@ -1,126 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ITMD 4/541 - Lab 2</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link href="assets/global.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <title>Resume</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="w700">
-    <h1>ITMD 4/541 - Lab 2</h1>
-    <h2>Xinyuan Zhang</h2>
-    <p>In this lab follow the directions in each part to write CCS rules to match the example image. <strong>DO NOT</strong> edit this HTML file in any way except to add your name in the H2 in the Header section above this text. <strong>DO NOT</strong> edit the global.css file in any way. You will write all your CSS in the proper sections in the styles.css file only.</p>
-    <p>Create a Lab2 folder in your class GitHub repository and place all the files for this lab in that folder, including the assets folder with images. Once you publish this lab to GitHub Pages, submit to the blackboard assignment a link to this main lab page in GitHub Pages and your GitHub repository code.</p>
-  </header>
-  <section id="flex-section1" class="w700">
-    <h2>CSS Flexbox - Part 1</h2>
-    <p>In this section you will try to create a horzontal navigation bar. Finish the CSS in flexbox part 1 in the styles.css file so that the nav bar matches the one below.</p>
-    <img src="assets/flex-p1.png" alt="flexbox part 1 example" width="700">
-    <p>The buttons should be in a row and have an equal amount of space in between each and at the beginning and end. You should be able to do this by only adding rules to the selector already in the CSS file.</p>
-    <div class="box">
-      <nav>
-        <ul>
-          <li><a class="btn" href="#/register">Register/Login</a></li>
-          <li><a class="btn" href="#/about">About</a></li>
-          <li><a class="btn" href="#/videos">Watch Videos</a></li>
-          <li><a class="btn" href="#/support">Contact Support</a></li>
-        </ul>
-      </nav>
+<div class="container">
+  <div class="profile">
+    <div class="profile_container">
+      <div class="profile_profileImg">
+        <img src="./images/resume avatar2.png" alt="shaif arfan">
+      </div>
+      <div>
+        <h1 class="profile_name">
+          <span class="profile_name_firstName"></span>
+          <span class="profile_name_lastName">Barry Zhang</span>
+        </h1>
+        <p class="profile_title">Software Developer</p>
+        <p class="description profile_description">
+
+        </p>
+        <a class="downloadBtn" href="./resume CN.pdf" download="Resume.pdf">Download Chinese Resume</a>
+      </div>
     </div>
-  </section>
-  <section id="flex-section2" class="w700">
-    <h2>CSS Flexbox - Part 2</h2>
-    <p>In this section you will turn an unordered list of this items into three equal width columns and reorder the columns using only CSS Flexbox. Finish the CSS in flexbox part 2 of the styles.css file so that it matches the example below.</p>
-    <img src="assets/flex-p2.png" alt="flexbox part 2 example" width="700">
-    <p>Each column should take up equal space, do not set a width, use flexbox properties to do this. The columns should be reorder as described, do not edit the HTML to reorder. You should be able to do this by only adding rules to the selectors already in the CSS file.</p>
-    <div class="box">
-      <nav>
-        <ul>
-          <li class="greybox item1">This is list item 1 and should be the first column.</li>
-          <li class="greybox item2">This is list item 2 in the HTML but I want it displayed as column 3 in the browser when rendered.</li>
-          <li class="greybox item3">There is more content in this item than either of the others. This is list item 3 in the HTML but I want it to display as the middle column in the browser.</li>
-        </ul>
-      </nav>
+  </div>
+  <div class="group-1">
+    <div class="skills">
+      <h3 class="title">Program skills</h3>
+      <ul class="skills_list description">
+        <li>Java</li>
+        <li>VUE</li>
+        <li>HTML CSS</li>
+        <li>Mysql</li>
+        <li>Android</li>
+      </ul>
     </div>
-  </section>
-  <section id="flex-section3" class="w700">
-    <h2>CSS Flexbox - Part 3</h2>
-    <p>In this section you need to do two things. First, you need to center the card item both horzontally and vertically in the box. Next, you need to turn the list of words into something that looks like tags below the image. Finish the CSS in flexbox part 3 of the styles.css file so that it matches the example below.</p>
-    <img src="assets/flex-p3.png" alt="flexbox part 3 example" width="700">
-    <p>You should be able to do this by only adding rules to the selectors already in the CSS file.</p>
-    <div class="box h400">
-      <div class="card">
-        <img src="assets/clouds.jpg" alt="clouds" width="200">
-        <div class="tags">
-          <ul>
-            <li>Clouds</li>
-            <li>Blue</li>
-            <li>White</li>
-            <li>Sky</li>
-            <li>Card</li>
-          </ul>
+    <div class="ref">
+      <h3 class="title">Other skills</h3>
+      <div class="ref_item">
+        <h4 class="ref_name">Office</h4>
+        <p class="description">Office Master: Good at Excel,PowerPoint,Word,PowerBI. Bilibili 9 Office Videos got 150K view, 2.5k fans</p>
+      </div>
+      <div class="ref_item">
+        <h4 class="ref_name">Media</h4>
+        <p class="description"> Video cutting by using FinalCutPro and Jianying, familiar with Audition, Affinity Photo, Affinty Designer </p>
+      </div>
+    </div>
+    <div class="edu">
+      <h3 class="title">Education</h3>
+      <div class="edu_item">
+        <p class="item_preTitle">2014.9-2018.7</p>
+        <h4 class="item_title">Logistics Management</h4>
+        <p class="item_subtitle">
+          Jimei University - Bachelor
+        </p>
+      </div>
+      <div class="edu_item">
+        <p class="item_preTitle">2022.8-Now
+        </p>
+        <h4 class="item_title">Software Engineer</h4>
+        <p class="item_subtitle">
+          Illinois Institute of Technology - Master
+        </p>
+      </div>
+
+    </div>
+
+    <div class="certification">
+      <h3 class="title">certification</h3>
+      <div class="certification_item">
+        <p class="item_preTitle"></p>
+        <h4 class="item_title">BEC Higher</h4>
+        <h4 class="item_title">CET6: 564</h4>
+        <h4 class="item_title">Computer II: 90</h4>
+        <p class="description">
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="group-2">
+    <div class="exp">
+      <h3 class="title">Experience</h3>
+      <div class="exp_item">
+        <p class="item_preTitle">2018.7 - 2019.6</p>
+        <h4 class="item_title">Kerry Logistics LTD.</h4>
+        <p class="item_title">MT</p>
+        <p class=" description">
+          Job rotate in Beijing, Shanghai, HK etc to learn different logistics business <br>
+          Optimization for different teams, like using VBA to achieve Excel automation for colleague
+        </p>
+      </div>
+      <div class="exp_item">
+        <p class="item_preTitle">2019.7 - 2020.5</p>
+        <h4 class="item_title">Kerry Logistics Xiamen Branch LTD.</h4>
+        <p class="item_title">SupplyChain Specialist</p>
+        <p class="description">
+          DELL EMC NH project data analysis, metrics tracking and IT requirement <br>
+          Handle different issues with factory, carrier, Dell logistic, trade compliance & IT
+        </p>
+      </div>
+      <div class="exp_item">
+        <p class="item_preTitle">2020.6 - Present</p>
+        <h4 class="item_title">Kerry Logistics Xiamen Branch LTD.</h4>
+        <p class="item_title">Developer</p>
+        <p class="description">
+          EMC Trident, HES Project requirement analysis and BRD<br>
+          Develop WMS Website using JAVA and VUE base on Spring Framework<br>
+          Develop WMS Andriod App using Java,Firebase,XML
+        </p>
+      </div>
+    </div>
+    <div class="awards">
+      <h3 class="title">Award</h3>
+      <div class="awards_item">
+        <p class="item_preTitle"></p>
+        <h4 class="item_title">University English Debate Champion</h4>
+        <p class=" description">
+          Jimei University 2017 English Debate Champion(WaiYanBei)
+        </p>
+      </div>
+
+    </div>
+
+    <div class="interest">
+      <h3 class="title">Interest</h3>
+      <div class="interest_items">
+        <div class="interest_item">
+          <i data-feather="dribbble"></i>
+          <span>Sport</span>
+        </div>
+        <div class="interest_item">
+          <i data-feather="map"></i>
+          <span>Geography</span>
+        </div>
+        <div class="interest_item">
+          <i data-feather="youtube"></i>
+          <span>YouTube</span>
         </div>
       </div>
+
     </div>
-  </section>
-  <section id="grid-section1" class="w700">
-    <h2>CSS Grid - Part 1</h2>
-    <p>In this section you need to create a grid where the six child boxes auto place. Finish the CSS in grid part 1 of the styles.css file so that it matches the example below.</p>
-    <img src="assets/grid-p1.png" alt="grid part 1 example" width="700">
-    <p>The grid should have 4 columns that divide the space evenly and a 20 pixel gap between the columns and rows. The rows should auto-generate and be 100px tall. You should be able to do this by only adding rules to the selectors already in the CSS file.</p>
-    <div class="box">
-      <div class="grid">
-        <div class="greybox">Box One</div>
-        <div class="greybox">Box Two</div>
-        <div class="greybox">Box Three</div>
-        <div class="greybox">Box Four</div>
-        <div class="greybox">Box Five</div>
-        <div class="greybox">Box Six</div>
+  </div>
+  <hr>
+  <div class="group-3">
+    <div class="contact">
+      <h3 class="title">Contact</h3>
+      <div class="contact_info">
+        <p class="description">
+          China,Fujian,Xiamen
+        </p>
+        <p class="description">
+          13275000508
+        </p>
+        <p class="description">
+          zxy.610@foxmail.com
+        </p>
       </div>
     </div>
-    </div>
-  </section>
-  <section id="grid-section2" class="w700">
-    <h2>CSS Grid - Part 2</h2>
-    <p>In this section the 3 column and 3 row grid is already defined. You need to position the two boxes in the grid the way they appear in the example. Finish the CSS in grid part 2 of the styles.css file so that it matches the example below.</p>
-    <img src="assets/grid-p2.png" alt="grid part 2 example" width="700">
-    <p>Make sure the red box and the blue box are positioned in the grid as shown. The blue box should be over top the red box. You should be able to do this by only adding rules to the selectors already in the CSS file.</p>
-    <div class="box h400">
-      <div class="grid">
-        <div class="gridboxblue">Blue Box</div>
-        <div class="gridboxred">Red Box</div>
+    <div class="social">
+      <h3 class="title">Socials</h3>
+      <div class="social_items">
+        <a href="https://github.com/13275000508" target="_b" class="social_item">
+          <i data-feather="github"></i>
+          <span>/OfficeGPT</span>
+        </a>
+        <a href="https://space.bilibili.com/35524459?spm_id_from=333.337.0.0" target="_blank" class="social_item">
+          <i data-feather="tv"></i>
+          <span>/OfficeGPT</span>
+        </a>
+        <!-- <a href="#" target="_blank" class="social_item">
+          <i data-feather="linkedin"></i>
+          <span>/shaifarfan08</span>
+        </a> -->
       </div>
     </div>
-    </div>
-  </section>
-  <section id="grid-section3" class="w700">
-    <h2>CSS Grid - Part 3</h2>
-    <p>In this section you will turn the four grey boxes into a grid that resembles a typical web page layout. Finish the CSS in grid part 3 of the styles.css file so that it matches the example below.</p>
-    <img src="assets/grid-p3.png" alt="grid part 3 example" width="700">
-    <p>The grid should be a 2 column grid with 3 rows. The first column should be twice the width of the second column, use fractional widths not fixed with units. The first and last row should be 100px tall and the middle row should be 300px tall. The first and last row should span both columns. There should be a 10px gap between all rows and columns. Pay attention to the order/position of the boxes on the grid. You should be able to do this by only adding rules to the selectors already in the CSS file.</p>
-    <div class="box">
-      <div class="grid">
-        <div class="greybox box1">Box One</div>
-        <div class="greybox box2">Box Two</div>
-        <div class="greybox box3">Box Three</div>
-        <div class="greybox box4">Box Four</div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="transition-section" class="w700">
-    <h2>CSS Transition</h2>
-    <p>In this section there is already a link styled with a hover state that changes the background and text color on hover. You will need to add the correct transition properties to the rules so that the colors change over time instead of instantly when the user hovers. Both the background color and text color should transition. When the user hovers I want to see the transitions happed with a .5 second duration. When the user stops hovering I want to see the transition back to normal happen with a 3 section duration. Finish the CSS in the transition part of the styles.css file.</p>
-    <div class="box">
-      <a href="#">Hover Over Me</a>
-    </div>
-    </div>
-  </section>
+  </div>
+</div>
+<script>
+  feather.replace()
+</script>
 </body>
+
 </html>
